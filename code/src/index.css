@@ -44,15 +44,26 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+input[type=text], textarea {
+  padding: 0 0.3rem;
+}
 
 button {
-  background-color: #ffadad;
+  background: #ffadad;
   padding: 0.5rem;
   border-radius: 10rem;
   font-family: 'Roboto Mono', monospace;
   margin-top: 0.5rem;
   color: #000;
   border: none;
+  transition: ease-in-out;
+  transition: 1s;
+}
+
+button:hover {
+  transition: 1s;
+  background: #fa5757;
+  cursor: pointer;
 }
 
 .text-input {
@@ -119,4 +130,18 @@ button {
   .message-container {
     width: 24rem;
   }
+}
+
+.heart-animation {
+  animation: loading-animation 2s infinite;
+  height: 25rem;
+}
+
+@keyframes loading-animation {
+  0% {font-size: 10rem;
+    color: #ffadad}
+  
+  100% {font-size: 15rem;
+    color: #ff3636;
+    }
 }

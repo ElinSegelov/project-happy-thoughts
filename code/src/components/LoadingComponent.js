@@ -1,14 +1,12 @@
 import React from 'react';
+import { FaHeart } from 'react-icons/fa'
 
 const LoadingComponent = () => {
   return (
-
-    <lottie-player
-      src="https://assets4.lottiefiles.com/packages/lf20_khnalzic.json"
-      background="transparent"
-      speed="0.6"
-      loop
-      autoplay />
+    <div className="animation-container">
+      <FaHeart className="heart-animation" />
+      <p>Loading happy thoughts...</p>
+    </div>
   )
 }
 

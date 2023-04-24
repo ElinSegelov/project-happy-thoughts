@@ -6,8 +6,8 @@ import NewMessage from './NewMessage';
 import LoadingComponent from './LoadingComponent';
 
 const MessageDisplay = () => {
-  const [messages, setMessages] = useState([])
-  const [isloading, setIsLoading] = useState(true)
+  const [messages, setMessages] = useState([]);
+  const [isloading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(BASE_URL)
@@ -30,4 +30,4 @@ const MessageDisplay = () => {
   )
 }
 
-export default MessageDisplay
+export default MessageDisplay;
